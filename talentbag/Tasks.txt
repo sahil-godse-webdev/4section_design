@@ -1,0 +1,23 @@
+Hey
+
+Below are two tasks.Do ping if you have any queries.
+
+Task 1:
+
+Converting task.xd to html file without bootstrap or any framework.
+
+You can download xd online(its free)
+This page has to be responsive,W3C validated and should have a pagespeed of 90+ in mobile and desktop.
+
+
+Task 2:
+
+Make something similar to the wireframe attached. Don't focus on the UI but the functionality.
+
+Functionality Needed:
+
+->The boxes at the bottom should be draggable to the upper container.Once this happens an entry should be made in a json file(use localstorage for the entries).
+Also once u drag the box to the upper container the box shouldn't disappear from the lower container.
+
+
+Timeframe to Submit : 2 Days

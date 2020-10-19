@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hide sections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sections").eq(0).show();
+            $("ul li a").click(function(){
+                $('ul li a').removeClass('active');
+                $(this).addClass('active');
+                $(".sections").hide();
+                var s=$(this).attr("id");
+                $("#"+s+"sec").fadeIn();
+            });
+        });
+    </script>
+</head>
+<style>
+    nav
+    {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #fff;
+
+    }
+    ul
+    {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #007b5e;
+    }
+    li
+    {
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+
+    a
+    {
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        text-align: center;
+        float: left;
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+    .sections
+    {
+      width: 100%;
+      height: auto;
+      background: #007b5e;
+      display: none;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    
+    @media (max-width: 640px) {
+      nav
+      {
+          width: 100%;
+          height: 40px;
+
+      }
+      ul
+      {
+          width: 100%;
+          height: 100%;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background: #007b5e;
+      }
+      li{
+        float: left;
+        width: 25%;
+        height: 100%;
+      }
+      ul li a
+      {
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+          padding: 13px;
+          box-sizing: border-box;
+          text-align: center;
+          float: left;
+          font-size: 13px;
+          cursor: pointer;
+      }
+    }
+
+
+    *{
+        font-family: sans-serif;
+        color: #eee;
+      }
+      body{
+        background: #007b5e;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 35px 50px;
+      }
+      .active{
+        border-bottom: 3px solid #fff;
+        font-weight: bold;
+      }
+</style>
+<body>
+    <h1 style="box-sizing: border-box; padding: 20px; text-align: center;">TABS</h1>
+    <nav>
+        <ul>
+            <li><a href="#" id="s1" class="active">Home</a></li>
+            <li><a href="#" id="s2">Profile</a></li>
+            <li><a href="#" id="s3">Contact</a></li>
+            <li><a href="#" id="s4">About</a></li>
+        </ul>
+    </nav>
+    <section id="s1sec" class="sections">Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.</section>
+    
+    <section id="s2sec" class="sections">Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.</section>
+
+    <section id="s3sec" class="sections">Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.</section>
+
+    <section id="s4sec" class="sections">Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.</section>
+</body>
+</html>
